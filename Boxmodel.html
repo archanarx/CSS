@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .outercontainerbx
+        {
+            border:15px inset #dc143c;
+            padding:30px;
+            margin: 30px auto;
+            width: 400px;
+            height:auto;
+            background-color: rgb(210, 161, 140);
+        }
+
+        .middleborder{
+            border:5px outset #c2c5ca;
+            padding:20px;
+            background-color: hsl(61, 59%, 56%);
+        }
+
+        .inner-box{
+            border:2px groove rgb(15, 10, 55);
+            padding:15px;
+            background-color:rgb(113, 109, 227);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outercontainerbx">
+        <div class="middleborder">
+            <div class="inner-box">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
