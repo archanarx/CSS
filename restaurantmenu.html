@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ember Table</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> 
     <style>
+        .fa-utensils{
+            color:#3e3838;
+            font-size:50px;
+            
+        }
+
+        .fa-bowl-food{
+            color:#3e3838;
+            margin-right:13px;
+
+        }
+
         .restaurant-name{
             text-align:right;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -45,22 +58,28 @@
 
         a{
             text-decoration:none;
+            color:#3e3838;
+            font-size: 24px;
         }
 
-        .a:hover{
+        a:hover{
             color:#ff4500;
         }
 
     </style>
 
 
+
 </head>
 <body>
-    <h3 class="restaurant-name">The Ember Table</h3>
+    <h3 class="restaurant-name"> <i class="fa-solid fa-utensils"></i>The Ember Table</h3>
+
     <p class="welcome-message">Welcome to The Ember Table, where every dish is crafted with heart, heat, and a touch of smoky elegance. Sit back, relax, and enjoy a dining experience that warms the soul.</p>
+
     <table>
         <tr>
-            <th colspan="2" class="menu">MENU</th>
+            <th colspan="2" class="menu"> <i class="fa-solid fa-bowl-food"></i>MENU</th>
+           
         </tr>
 
         <tr>
@@ -69,23 +88,24 @@
         </tr>
         
         <tr>
-            <td class="a"><i>Smoked Garlic Butter Ribeye</i></td>
+            <td class="item"><i>Smoked Garlic Butter Ribeye</i></td>
             <td>₹1,950</td>
         </tr>
 
         <tr>
-            <td class="a"><i>Charred Citrus Glazed Salmon</i></td>
+            <td class="item"><i>Charred Citrus Glazed Salmon</i></td>
             <td>₹1,450</td>
             
         </tr>
 
         <tr>
-            <td class="a"><i>Wood-Fired Mushroom Risotto</i></td>
+            <td class="item"><i>Wood-Fired Mushroom Risotto</i></td>
             <td>₹950</td>
             
         </tr>
 
     </table>
-    
+    <br><br>
+    <a href="restaurantcontactus.html">Contact us!</a>
 </body>
 </html>
