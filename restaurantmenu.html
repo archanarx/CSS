@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ember Table</title>
+    <style>
+        .restaurant-name{
+            text-align:right;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:60px;
+            color:rgba(255, 0, 0, 0.58);
+        }
+
+        .welcome-message{
+            text-align:center;
+            text-transform: uppercase;
+            letter-spacing:3px;
+            word-spacing:3px;
+        }
+
+        .menu{
+            text-align:center;
+            font-size:22px;
+            font-weight:bold;
+        }
+
+        table,th,td {
+            border:2px ridge rgba(232, 50, 50, 0.58);    
+        }
+
+        table{
+            border-collapse:collapse;
+            width:60%;
+            margin:auto;
+            
+        }
+
+        th,td {
+            text-align: center;
+            vertical-align: middle;
+            height:45px;
+            font-size:20px;
+        }
+
+        a{
+            text-decoration:none;
+        }
+
+        .a:hover{
+            color:#ff4500;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h3 class="restaurant-name">The Ember Table</h3>
+    <p class="welcome-message">Welcome to The Ember Table, where every dish is crafted with heart, heat, and a touch of smoky elegance. Sit back, relax, and enjoy a dining experience that warms the soul.</p>
+    <table>
+        <tr>
+            <th colspan="2" class="menu">MENU</th>
+        </tr>
+
+        <tr>
+            <th>ITEMS</th>
+            <th>PRICES</th>
+        </tr>
+        
+        <tr>
+            <td class="a"><i>Smoked Garlic Butter Ribeye</i></td>
+            <td>₹1,950</td>
+        </tr>
+
+        <tr>
+            <td class="a"><i>Charred Citrus Glazed Salmon</i></td>
+            <td>₹1,450</td>
+            
+        </tr>
+
+        <tr>
+            <td class="a"><i>Wood-Fired Mushroom Risotto</i></td>
+            <td>₹950</td>
+            
+        </tr>
+
+    </table>
+    
+</body>
+</html>
