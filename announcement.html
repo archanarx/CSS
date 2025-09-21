@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcement</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            padding:0;
+            margin:0;
+            background-color:rgb(138, 24, 24);
+
+        }
+
+        .heading{
+            text-align:center;
+            padding:20px 0;
+            background-color:rgb(230, 223, 223);
+            margin:0;
+            font-size:30px;
+        }
+
+        .picture{
+            float:left;
+            margin-right:20px;
+            width: 210px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            
+        }
+        
+        .notice-box{
+            background-color: rgb(225, 204, 176);
+            width:60%;
+            max-width:800px;
+            margin:50px auto;
+            padding:30px;
+            border:2px solid black;
+            height:240px;
+            position:relative;
+            box-sizing:border-box;
+            overflow:auto;
+           
+        }
+        
+        .fa-bell{
+            position:absolute;
+            top:10px;
+            right:14px;
+            font-size:20px;
+            color:black;
+            
+        }
+
+        .note{
+            font-size:15px;
+            padding-top:10px;
+            padding-bottom:10px;
+            line-height:1.5em;
+            color:rgb(24, 8, 8);
+        }
+
+        .notice-box::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1 class="heading">Important Notice</h1>
+    
+    <div class="notice-box">
+        <i class="fa-solid fa-bell"></i>
+        <img class="picture" src="https://www.pikpng.com/pngl/b/546-5462223_megaphone-loudspeaker-png-clipart.png" alt="Loud speaker" width="210px" height="150px">
+        <div class="note">Please be informed that the school will remain closed on Friday, September 22<sup>nd</sup>, due to the annual teacher training workshop.All classes will resume on Monday as scheduled. Students are advised to use this time to revise their coursework and complete any pending assignments. Stay safe and take care!</div>
+    </div>
+    
+</body>
+</html>
