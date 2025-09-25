@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        margin:0;
+        padding:20px;
+    }
+
+    .product-card{
+        width:400px;
+        border:1px solid #3d0b0b;
+        border-radius:10px;
+        padding:14px;
+    }
+
+    .button{
+        font-size:16px;
+        font-family:Arial, Helvetica, sans-serif;
+        padding:12px 56px;
+        text-decoration:none;
+        border-radius:10px;
+        color:#4fd9c9;
+        display:inline-block;
+        background-color:#2f4f4f;
+        border:none;
+    }
+
+    h1{
+        margin:10px 0;
+        font-size:1.4em;
+    }
+
+    .picture{
+        border:2px solid #000000;
+        width:100%;
+        height:auto;
+        border-top-left-radius:12px;
+        border-bottom-right-radius:12px;
+        display:block;
+        margin-bottom:12px;
+    }
+
+    @media (max-width:600px){
+    .product-card {
+        margin:0 auto;
+        text-align:center;
+        font-size:14px;
+    }
+
+    .button{
+        padding:10px 40px;
+        font-size:12px;
+    }
+    
+    }
+
+    @media (orientation:landscape){
+        .product-card{
+            background-color:lightblue;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+    <img src="https://image01-in.oneplus.net/media/202504/29/f7dd3061e62632c0f49d1f9c28ccc214.png?x-amz-process=image/format,webp/quality,Q_80" class="picture" alt="Mobile">
+    <h1>Great Product!</h1>
+    <button class="button">Buy</button>
+    </div>
+</body>
+</html>
