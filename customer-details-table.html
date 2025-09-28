@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin:40px;
+        }
+
+        .table-container{
+            border:5px ridge #000000;
+            padding:20px;
+            max-width:1000px;
+            margin:auto;
+        }
+
+        .header-row{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:40px;
+            margin-top:70px;
+        }
+
+        .left-controls, .right-controls{
+            flex: 1;
+        }
+
+        .left-controls{
+            display:flex;
+            align-items:center;
+        }
+
+        .left-controls select{
+            margin:0px 5px;
+        }
+
+        .center-title{
+            flex:1;
+            text-align:center;
+        }
+
+        .center-title h2{
+            margin: 0;
+        }
+
+        .center-title h2 span{
+            font-weight: normal;
+        }
+
+        .right-controls {
+            text-align: right;
+        }
+
+        .right-controls input[type="text"] {
+            padding: 5px;
+            font-size: 14px;
+            border:2px inset #000000;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        th,td{
+            border:1px solid #000000;
+            text-align:left;
+            padding:10px 15px;
+        }
+
+        th{
+            background-color:#f9f9f9;
+            font-weight:bold;
+        }
+        
+        .pagination{
+            display:flex;
+            justify-content:right;
+            margin-bottom:35px;
+         }    
+
+        .pagination span {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            margin: 2px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .pagination button {
+            padding: 6px 12px;
+            margin: 2px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .pagination .active{
+            background-color:#03a9f4;
+            color:#ffffff;
+            font-weight:bold;
+        }
+
+        .entries-info{
+            margin-top:10px;
+            font-size:14px;
+        }
+
+        .fa-eye{
+            color:#03a9f4;
+            margin-right: 8px;
+        }
+        .fa-pencil{
+            color:#f0bb0c;
+            margin-right: 8px;
+        }
+        .fa-trash{
+            color:#ff0000;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="table-container">
+
+
+    <div class="header-row">
+        <div class="left-controls">
+            Show
+          <select>
+             <option>5</option>
+             <option>10</option>
+             <option>15</option>
+          </select>
+            entries
+        </div>
+
+        <div class="center-title">
+            <h2><span>Customer </span>Details</h2>
+        </div>    
+
+        <div class="right-controls">
+            <input type="text" placeholder="search">
+        </div>    
+    </div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name<i class="fa-solid fa-sort"></i></th>
+                <th>Address</th>
+                <th>City<i class="fa-solid fa-sort"></i></th>
+                <th>Pincode</th>
+                <th>Country<i class="fa-solid fa-sort"></i></th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Thomas Hardy</td>
+                <td>89 Chiarsco Rd.</td>
+                <td>Portland</td>
+                <td>91219</td>
+                <td>USA</td>
+                <td><i class="fa-solid fa-eye"></i><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Maria Anders</td>
+                <td>Obere Str.57</td>
+                <td>Berlin</td>
+                <td>12209</td>
+                <td>Germany</td>
+                <td><i class="fa-solid fa-eye"></i><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Fran Wilson</td>
+                <td>C/Araquil.67</td>
+                <td>Madrid</td>
+                <td>28023</td>
+                <td>Spain</td>
+                <td><i class="fa-solid fa-eye"></i><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Dominic Perrier</td>
+                <td>25,rue Lauriston</td>
+                <td>Paris</td>
+                <td>75016</td>
+                <td>France</td>
+                <td><i class="fa-solid fa-eye"></i><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Martin Blank</td>
+                <td>Via Monteblanco 34</td>
+                <td>Turin</td>
+                <td>10100</td>
+                <td>Italy</td>
+                <td><i class="fa-solid fa-eye"></i><i class="fa-solid fa-pencil"></i><i class="fa-solid fa-trash"></i></td>
+            </tr>   
+        </tbody>    
+    </table>
+
+    <div class="entries-info">
+    Showing <strong>5</strong> out of <strong>25</strong> entries
+    </div>
+
+    <div class="pagination">
+        <button>Previous</button>
+        <span>1</span>
+        <span>2</span>
+        <span class=" active">3</span>
+        <span>4</span>
+        <span>5</span>
+        <button>Next</button>
+    </div>
+
+</div>
+</body>
+</html>
