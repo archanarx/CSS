@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bouncing Rabbit</title>
+    <style>
+        /* bouncing animation (floating)  */
+        @keyframes bounce {
+        0%, 100% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(-30px);
+        }
+        }
+
+    .rabbit {
+    animation: bounce 1s linear infinite;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    }
+    </style>
+</head>
+<body>
+    <div class="rabbit">
+  <img src="https://tse1.mm.bing.net/th/id/OIP.noqG4vAO3BDAHY9s1K-uaQHaHa?pid=ImgDet&w=208&h=208&c=7&dpr=1.5&o=7&rm=3" alt="anime rabbit" />
+</div>
+</body>
+</html>
